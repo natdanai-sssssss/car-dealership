@@ -68,7 +68,7 @@ export default function App() {
         {/* Header */}
         <header className="text-center mb-8">
         <p></p>
-          <h1 className="text-5xl font-bold text-pink-600">Car Dealership</h1>
+          <h1 className="text-5xl font-bold text-pink-600">Online Car Dealer</h1>
         </header>
 
         <div className="flex">
