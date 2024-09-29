@@ -61,7 +61,7 @@ export default function App() {
 
   // Calculate totals
   const subtotal = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
-  const total = subtotal - discount + 100; // Add shipping
+  const total = subtotal - discount + 10000; // Add shipping
 
     return (
       <div className="container mx-auto px-4">
@@ -96,11 +96,13 @@ export default function App() {
           <p className="product-price text-sm text-white-500">
             Price: {product.price} THB
           </p>
+          <p class="coupon">Coupon: Use code <strong>CAR10</strong> for 10% off</p>
           <button
             className="button bg-pink-500 text-white py-2 px-4 mt-2 rounded hover:bg-pink-600 transition"
             onClick={() => addToCart(product)}
           >
             Add to Cart
+            
           </button>
         </div>
         
@@ -167,7 +169,7 @@ export default function App() {
                     />
                     <p>Subtotal: {subtotal} THB</p>
                     <p>Discount: {discount} THB</p>
-                    <p>Shipping: 10,000,000 THB</p>
+                    <p>Shipping Free: +10,000 THB</p>
                     <p className="total text-xl font-bold text-pink-400">
                       Total: {total} THB
                     </p>
